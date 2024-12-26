@@ -1,4 +1,4 @@
-import UserTable from "../components/UsersTable.tsx/UserTable";
+import UserTable from "../components/Users/UserTable";
 
 const usersPage = () => {
   return <UserTable />;

@@ -2,8 +2,6 @@ const { getAllProducts, createProduct, updateProduct, deleteProduct, getProductD
 
 module.exports = {
     getProductsCtr: async (req, res) => {
-        console.log("req.params", req.params);
-        console.log("req.query", req.query);
         try {
             let result = await getAllProducts()
             return res.status(200).json({

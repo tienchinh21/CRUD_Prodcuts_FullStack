@@ -123,7 +123,13 @@ const ProductsTable = () => {
           Create Product
         </Button>
       </div>
-      <Table dataSource={listProducts} columns={columns} />
+      <Table
+        dataSource={listProducts}
+        columns={columns}
+        pagination={{
+          defaultPageSize: 5,
+        }}
+      />
       <CreateUserModel
         isCreateModalOpen={isCreateModalOpen}
         onClose={handleModalClose}
